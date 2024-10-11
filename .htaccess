@@ -1,8 +1,10 @@
 RewriteEngine On
-# Remove .php extension from URL
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*)$ $1.php [L]
 
-# Redirect .php to clean URL (optional, but recommended for SEO)
+# Check if the requested file exists as a PHP file
+RewriteCond %{REQUEST_FILENAME}.php -f
+# If it does, rewrite the URL to serve that PHP file
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Optional: Redirect .php URLs to the version without .php (for SEO)
 RewriteCond %{THE_REQUEST} \s([^.]+\.php)[\s?] [NC]
 RewriteRule ^ %1 [R=301,L]
