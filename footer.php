@@ -17,9 +17,9 @@
                         <div class="col-12 col-sm-12 col-md-4 col-lg-3 footer-links">
                             <h4 class="h4">Quick Shop</h4>
                             <ul>
-                                <li><a href="our-products">Shea Butter</a></li>
-                                <li><a href="our-products">Body and Face Oils</a></li>
-                                <li><a href="our-products">Scented Candles</a></li>
+                                <li><a href="our-products.php">Shea Butter</a></li>
+                                <li><a href="our-products.php">Body and Face Oils</a></li>
+                                <li><a href="our-products.php">Scented Candles</a></li>
                             </ul>
                         </div>
                         <div class="col-12 col-sm-12 col-md-4 col-lg-3 footer-links">

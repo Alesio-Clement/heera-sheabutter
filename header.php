@@ -41,7 +41,7 @@
                         </div>
                      
                         <div class="logo col-4 col-sm-4 col-md-4 col-lg-2 align-self-center">
-                            <a href="">
+                            <a href="index.php">
                                 <img src="./assets/images/logo.svg" alt="" title="" />
                             </a>
                         </div>
@@ -51,7 +51,7 @@
                             <nav class="grid__item" id="AccessibleNav">
                                 <ul id="siteNav" class="site-nav medium left hidearrow">
                                     <li class="lvl1 parent megamenu"><a href="index.php">Home</a></li>
-                                    <li class="lvl1 parent megamenu"><a href="product.php">Our Products</a></li>
+                                    <li class="lvl1 parent megamenu"><a href="our-products.php">Our Products</a></li>
                                     <li class="lvl1 parent megamenu"><a href="about-us.php">About Us</a></li>
                                     <li class="lvl1 parent megamenu"><a href="faqs.php">FAQs</a></li>
                                     <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact Us</a></li>
