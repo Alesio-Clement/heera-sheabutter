@@ -1,33 +1,14 @@
-# Updated PHP htaccess file
-# Apache 2.4
-
-# The following require certain allow overrides, if getting 500 error comment them out one by one 
-# Can be resolved in apache httpd.conf to ensure security alternatives
-
-# Override charset
-AddDefaultCharset UTF-8
-
-# Prevent directory listings
-Options -Indexes
-
-# Follow symbolic links, required for rewrites on some hosts
-Options +FollowSymLinks
-
-# Set the default handler
-DirectoryIndex index.php
-
-# Handle rewrites for friendly URLs
+# Enable mod_rewrite
 <IfModule mod_rewrite.c>
-    RewriteEngine on
+    RewriteEngine On
 
-    # Set your RewriteBase if the site is in a subdirectory
+    # Ensure the base is correct (adjust if your site is in a subdirectory)
     RewriteBase /
 
-    # Conditions to check if the requested resource is a file or directory
+    # If the requested file does not exist
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 
-    # Rewrite rule for pretty URLs
-    RewriteRule ^([A-Za-z0-9_-]+)/?$ index.php?id=$1 [QSA,L]
+    # Rewrite URLs without .php to the actual PHP files
+    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
 </IfModule>
-
