@@ -79,17 +79,17 @@
                 <div class="container-fluid">
                     <div class="marquee-text">
                         <div class="top-info-bar d-flex">
-                            <div class="flex-item center"><a href="our-products/">WELCOME TO HEERA SHEA –
+                            <div class="flex-item center"><a href="our-products.php">WELCOME TO HEERA SHEA –
                                     HAND-WHIPPED WITH LOVE!</a></div>
-                            <div class="flex-item center"><a href="our-products/"><b>NOURISH, SOOTHE, AND PROTECT
+                            <div class="flex-item center"><a href="our-products.php"><b>NOURISH, SOOTHE, AND PROTECT
                                         YOUR SKIN NATURALLY</b></a></div>
-                            <div class="flex-item center"><a href="our-products/"><b>DISCOVER PURE, HAND-WHIPPED
+                            <div class="flex-item center"><a href="our-products.php"><b>DISCOVER PURE, HAND-WHIPPED
                                         SHEA BUTTER FOR SENSITIVE SKIN!</b></a></div>
-                            <div class="flex-item center"><a href="our-products/">IGNITE YOUR SENSES WITH OUR
+                            <div class="flex-item center"><a href="our-products.php">IGNITE YOUR SENSES WITH OUR
                                     SCENTED CANDLES</b></a></div>
-                            <div class="flex-item center"><a href="our-products/"><b>ENJOY FAST DELIVERY ON ALL
+                            <div class="flex-item center"><a href="our-products.php"><b>ENJOY FAST DELIVERY ON ALL
                                         ORDERS!</b></a></div>
-                            <div class="flex-item center"><a href="our-products/"><b>ELEVATE YOUR SKINCARE ROUTINE
+                            <div class="flex-item center"><a href="our-products.php"><b>ELEVATE YOUR SKINCARE ROUTINE
                                         WITH OUR BODY OILS!</b></a></div>
                         </div>
                     </div>
@@ -100,11 +100,11 @@
         <div class="mobile-nav-wrapper" role="navigation">
             <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
             <ul id="MobileNav" class="mobile-nav">
-                <li class="lvl1 parent megamenu"><a href="">Home</a></li>
-                <li class="lvl1 parent megamenu"><a href="our-products/">Our Products</a></li>
-                <li class="lvl1 parent megamenu"><a href="about-us/">About Us</a></li>
-                <li class="lvl1 parent megamenu"><a href="faqs/">FAQs</a></li>
-                <li class="lvl1 parent megamenu"><a href="contact-us/">Contact Us</a></li>
+                <li class="lvl1 parent megamenu"><a href="index.php">Home</a></li>
+                <li class="lvl1 parent megamenu"><a href="our-products.php">Our Products</a></li>
+                <li class="lvl1 parent megamenu"><a href="about-us.php">About Us</a></li>
+                <li class="lvl1 parent megamenu"><a href="faqs.php">FAQs</a></li>
+                <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact Us</a></li>
             </ul>
         </div>
        
