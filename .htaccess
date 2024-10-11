@@ -1,10 +1,33 @@
-RewriteEngine On
+# Updated PHP htaccess file
+# Apache 2.4
 
-# Check if the requested file exists as a PHP file
-RewriteCond %{REQUEST_FILENAME}.php -f
-# If it does, rewrite the URL to serve that PHP file
-RewriteRule ^(.*)$ $1.php [L,QSA]
+# The following require certain allow overrides, if getting 500 error comment them out one by one 
+# Can be resolved in apache httpd.conf to ensure security alternatives
 
-# Optional: Redirect .php URLs to the version without .php (for SEO)
-RewriteCond %{THE_REQUEST} \s([^.]+\.php)[\s?] [NC]
-RewriteRule ^ %1 [R=301,L]
+# Override charset
+AddDefaultCharset UTF-8
+
+# Prevent directory listings
+Options -Indexes
+
+# Follow symbolic links, required for rewrites on some hosts
+Options +FollowSymLinks
+
+# Set the default handler
+DirectoryIndex index.php
+
+# Handle rewrites for friendly URLs
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Set your RewriteBase if the site is in a subdirectory
+    RewriteBase /
+
+    # Conditions to check if the requested resource is a file or directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Rewrite rule for pretty URLs
+    RewriteRule ^([A-Za-z0-9_-]+)/?$ index.php?id=$1 [QSA,L]
+</IfModule>
+
